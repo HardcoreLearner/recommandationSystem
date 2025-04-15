@@ -27,6 +27,9 @@ for product_id in range(20):
 
 # Générer des notations aléatoires (1-5) utilisateurs -> produits
 ratings_data = np.random.randint(1, 6, size=(100, 20))  # 100 utilisateurs x 20 produits
+# Ajout de "trous" (30% des notes mises à 0 pour simuler des produits non notés)
+mask = np.random.rand(100, 20) < 0.3  # Masque aléatoire pour 30% des données
+ratings_data[mask] = 0  # Met ces cases à 0
 ratings_df = pd.DataFrame(ratings_data, columns=[f'product_{pid}' for pid in range(20)])
 ratings_df.index.name = 'user_id'
 
