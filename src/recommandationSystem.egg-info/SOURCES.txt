@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/recommandationSystem.egg-info/PKG-INFO
+src/recommandationSystem.egg-info/SOURCES.txt
+src/recommandationSystem.egg-info/dependency_links.txt
+src/recommandationSystem.egg-info/requires.txt
+src/recommandationSystem.egg-info/top_level.txt
+test/test_data_loading.py
+test/test_performance.py
+test/test_recommender.py
